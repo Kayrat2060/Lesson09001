@@ -17,5 +17,11 @@ inputEl.addEventListener('input', (event) =>{
 // - добавить два класса: animate_animated и animate_fadeInLeftBig
 // - поставить данному элементу стиль visibility в значение 'visible'.
 
-
+const messageBtn = document.querySelector('.messageBtn');
+const message = document.querySelector('.message');
+messageBtn.addEventListener('click', () => {
+    message.classList.add("animate_animated", "animate_fadeInLeftBig");
+    message.setAttribute('visibility', 'visible');
+    console.log(message);
+})
 
