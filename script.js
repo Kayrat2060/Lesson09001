@@ -21,7 +21,8 @@ const messageBtn = document.querySelector('.messageBtn');
 const message = document.querySelector('.message');
 messageBtn.addEventListener('click', () => {
     message.classList.add("animate_animated", "animate_fadeInLeftBig");
-    message.setAttribute('visibility', 'visible');
+    // message.setAttribute('visibility', 'visible');
+    message.style.visibility = 'visible';
     console.log(message);
 })
 
