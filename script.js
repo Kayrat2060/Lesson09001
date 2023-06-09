@@ -25,7 +25,6 @@ messageBtn.addEventListener('click', () => {
 // Как только пользователь начинает заполнять какое-либо поле, необходимо, при вводе в данное поле, произвести проверку:
 // - Если поле пустое, необходимо данное поле подсветить (поставить класс error данному полю).
 // - Если поле было чем-либо заполнено, подсветку (класс error) необходимо убрать.
-
 const form = document.querySelector('form');
 const firstInput = document.querySelector('input.form-control');
 const secondInput = document.querySelector('select.form-control');
@@ -55,4 +54,3 @@ secondInput.addEventListener('input', (event) => {
         secondInput.classList.add('error');
     }
 })
-
